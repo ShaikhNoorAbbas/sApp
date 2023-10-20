@@ -1,0 +1,905 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>sApp</title>
+    <!-- swiper CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- This is Bootstrap CDN  -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    />
+    <!-- My Custom CSS file Link -->
+    <link rel="stylesheet" href="./css/styles.css" />
+     <!-- JQuery CDN -->
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  </head>
+
+  <body>
+    <!-- main Container of Website  -->
+
+    <main class="main" id="top">
+      <header class="welcomeBanner">
+        <!-- Navbar Start -->
+
+        <nav class="navbar navbar-expand-lg fixed-top">
+          <div class="container">
+          <a class="navbar-brand" href="#">
+            <div class="logo"></div>
+          </a>
+
+          <button
+            class="navbar-toggler collapsed d-flex d-lg-none flex-column justify-content-around"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="toggler-icon top-bar"></span>
+            <span class="toggler-icon middle-bar"></span>
+            <span class="toggler-icon bottom-bar"></span>
+          </button>
+
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbarNav"
+          >
+            <ul class="navbar-nav">
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="homeDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Home
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="homeDropdown">
+                  <li><a class="dropdown-item" href="#">Homepage-1</a></li>
+                  <li><a class="dropdown-item" href="#">Homepage-2</a></li>
+                  <li><a class="dropdown-item" href="#">Homepage-3</a></li>
+                  <li><a class="dropdown-item" href="#">Homepage-4</a></li>
+                  <li><a class="dropdown-item" href="#">Homepage-5</a></li>
+                  <li><a class="dropdown-item" href="#">Homepage-6</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="pagesDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Pages
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="pagesDropdown">
+                  <li><a class="dropdown-item" href="#">Page 1</a></li>
+                  <li><a class="dropdown-item" href="#">Page 2</a></li>
+                  <li><a class="dropdown-item" href="#">Page 3</a></li>
+                  <li><a class="dropdown-item" href="#">Page 4</a></li>
+                  <li><a class="dropdown-item" href="#">Page 5</a></li>
+                  <li><a class="dropdown-item" href="#">Page 6</a></li>
+                  <li><a class="dropdown-item" href="#">Page 7</a></li>
+                  <li><a class="dropdown-item" href="#">Page 8</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Features</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Screenshots</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Pricing</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        </nav>
+        <!-- Navbar Ends -->
+        <!-- Content Of Welcome Banner Starts from here -->
+        <div class="container">
+          <div class="row welcomeTop">
+            <div class="col-lg-6 headleft" >
+              <h2 class="heading1">Make cool Landing pages with sApp</h2>
+              <p class="headText">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi
+                aliquid, nam recusandae deserunt optio rem ipsum illum, ullam ea
+                corporis, provident distinctio obcaecati doloribus ipsam minus
+                alias perspiciatis ducimus ut?
+              </p>
+              <a href="#">
+                <img
+                  src="./img/icon/google-play.png"  
+                  alt="Google Play"
+                  class="headIcon"
+                />
+                <img
+                  src="./img/icon/app-store.png"
+                  alt="Apple Play Store"
+                  class="headIcon"
+                />
+              </a>
+              <p class="headBottomText">
+                *<i> Available on iPhone, iPad and all Android devices</i>
+              </p>
+            </div>
+            <div class="col-lg-6 ">
+             <img src="./img/welcome/welcome-mockup.png" alt="Mobile"  class="headRightImage img-fluid">
+          </div>
+        </div>
+        <!-- Content Of Welcome Banner Ends here -->
+        <!-- Wave Start-->
+        <div class="welcomeBanner__wave">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path
+              fill="#ffffff"
+              fill-opacity="1"
+              d="M0,64L60,106.7C120,149,240,235,360,229.3C480,224,600,128,720,122.7C840,117,960,203,1080,213.3C1200,224,1320,160,1380,128L1440,96L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"
+            ></path>
+          </svg>
+        </div>
+        <!-- Wave End -->
+      </header>
+
+      <!-- Counter Section Will Start from here-->
+      <section id="counterSection" class="container">
+        <div class="row">
+          <div class="col-md-3 text-center counterStyle">
+            <h2><span id="counter1">0</span> <span id="counterM">M</span></h2>
+            <p>Users</p>
+          </div>
+          <div class="col-md-3 text-center counterStyle">
+          <h2><span id="counter2">0</span> <span id="counterM">K</span></h2>
+          <p>Download</p>
+          </div>
+          <div class="col-md-3 text-center counterStyle">
+          <h2><span id="counter3">0</span> <span id="counterM">M</span></h2>
+          <p>Customer</p>
+          </div>
+          <div class="col-md-3 text-center counterStyle">
+          <h2><span id="counter4">0</span> <span id="counterM">K</span></h2>
+          <p>Developer</p>
+          </div>
+          </div>
+      </section>
+      <!-- Counter Section Ends Here-->
+
+      <!-- Feature Section Starts from here -->
+      <section class="container FeatureContainer" >
+          <div class="topSection">
+          <div class="topFeature">
+            <p><span><i class="fa-regular fa-lightbulb"></i>Premium </span> Features</p>
+            <h2>What Makes sApp Different?</h2>
+          </div>
+          <div class="div">
+            <p class="topFeatureBottom">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum obcaecati dignissimos quae quo ad iste ipsum officiis deleniti asperiores sit.
+            </p>
+          </div>
+        </div>
+        <!-- Second Feature Section -->
+        <div class="container bottomFeature">
+          <!-- <div class="row"> -->
+
+            <!-- Column 1 -->
+            <div class="col-12 col-md-6 col-lg-4 center-content">
+              <div class="box">
+                <img src="./img/icon/featured-img/layers.png" alt="Image 1" width="48px" height="48px">
+                <h3>Fully functional</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis culpa expedita dignissimos</p>
+              </div>
+            </div>
+      
+            <!-- Column 2 -->
+            <div class="col-12 col-md-6 col-lg-4 center-content">
+              <div class="box">
+                <img src="./img/icon/featured-img/speak.png" alt="Image 2" width="48px" height="48px">
+                <h3>Live Chat</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis culpa expedita dignissimos.</p>
+              </div>
+            </div>
+      
+            <!-- Column 3 -->
+            <div class="col-12 col-md-6 col-lg-4 center-content">
+              <div class="box">
+                <img src="./img/icon/featured-img/lock.png" alt="Image 3" width="48px" height="48px">
+                <h3>Secure Data</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis culpa expedita dignissimos.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Feature Section Ends Here -->
+      <!-- Text on left and Image on Right Section Startes from here  -->
+      <section class="textImageContainer">
+        <!-- Row with text on the left and image on the right -->
+        <div class="container">
+          <div class="row">
+            <!-- Column with image on the left -->
+            <div class="col-md-6 d-flex flex-column justify-content-between leftText">
+              <h2 class="leftTextHeading">Make Your Device Manage Everything For You</h2>
+              <ul class="serviceContainer">
+                <li>
+                  <div class="serviceIcon">
+                    <span><i class="fa-solid fa-layer-group"></i></span>
+                  </div>
+                  <div class="servicePara">
+                    <p>Fully layered dolor sit amet, consectetur adipisicing elit. Facere, nobis, id expedita dolores officiis laboriosam.</p>
+                  </div>
+                </li>
+                <li>
+                  <div class="serviceIcon">
+                    <span><i class="fa-solid fa-brush"></i></span>
+                  </div>
+                  <div class="servicePara">
+                    <p>Customizable design dolor sit amet, consectetur adipisicing elit. Facere, nobis, id expedita dolores officiis laboriosam.</p>
+                  </div>
+                </li>
+                <li>
+                  <div class="serviceIcon">
+                    <span><i class="fa-solid fa-droplet"></i></span>
+                  </div>
+                  <div class="servicePara">
+                    <p>Drop ipsum dolor sit amet, consectetur adipisicing elit. Facere, nobis, id expedita dolores officiis laboriosam.</p>
+                  </div>
+                </li>
+                <li>
+                  <div class="serviceIcon">
+                    <span><i class="fa-solid fa-cart-arrow-down"></i></span>
+                  </div>
+                  <div class="servicePara">
+                    <p>Marketing chart dolor sit amet, consectetur adipisicing elit. Facere, nobis, id expedita dolores officiis laboriosam.</p>
+                  </div>
+                </li>
+              </ul>
+              <a href="#" class="Learmorebtn">Learn More</a>
+            </div>
+            
+            <!-- Column with text on the right -->
+            <div class="col-md-6 d-flex justify-content-between align-items-center">
+              <img src="./img/features/thumb-1.png" alt="Image" class="rightImage">
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Text on left and Image on Right Section Ends here -->
+
+      <!-- Image on Left and Text on Right Startes from here-->
+      <section class="container ImageTextContainer">
+        <!-- Row with text on the left and image on the right -->
+          <div class="row">
+            <!-- Column with image on the left -->
+            <div class="col-md-6 d-flex flex-column justify-content-between leftText">
+              <img src="./img/discover/iphone_x.png" alt="iphone_x">
+            </div>
+            
+            <!-- Column with text on the right -->
+            <div class="col-md-6 d-flex justify-content-between align-items-center rightPadding">
+              <div>
+                <h2 class="leftTextHeading">Easily communicate with clients using sApp.</h2>
+                <p class="rightPara">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique dolor ut iusto vitae autem neque eum ipsam.</p>
+                <ul class="rightUlContainer">
+                  <li>
+                    <span><i class="fa-solid fa-check"></i></span>
+                    <p class="rightPara">Combined with a handful of model sentence structures looks reasonable.</p>
+                  </li>
+                  <li>
+                    <span><i class="fa-solid fa-check"></i></span>
+                    <p class="rightPara">Contrary to popular belief, Lorem Ipsum is not simply random text.</p>
+                  </li>
+                  <li>
+                    <span><i class="fa-solid fa-check"></i></span>
+                    <p class="rightPara">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium</p>
+                  </li>
+                  <li>
+                    <span><i class="fa-solid fa-check"></i></span>
+                    <p class="rightPara">All the Lorem Ipsum generators on the Internet tend to repeat necessary.</p>
+                  </li>
+                </ul>
+                <div class="rightServiceIconContainer">
+                  <div class="serviceIcon">
+                    <span><i class="fa-solid fa-bell"></i></span>
+                  </div>
+                  <div class="serviceIcon">
+                    <span><i class="fa-solid fa-envelope-open"></i></span>
+                  </div>
+                  <div class="serviceIcon">
+                    <span><i class="fa-solid fa-video"></i></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      </section>
+      <!-- Image on Left and Text on Right Ends here-->
+        <!--  How sApp Work Feature Startes from here-->
+        <section class="howContianer">
+          <div class="howTop">
+            <h2>How sApp works?</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum obcaecati dignissimos quae quo ad iste ipsum officiis deleniti asperiores sit.</p>
+          </div>
+          <div class="howBottom">
+            <div class="howbox">
+              <div class="howboxicon">
+                <img src="./img/icon/work/download.png" alt="download">
+              </div>
+              <div class="howboxhead">
+                <h3>Install the App</h3>
+              </div>
+              <div class="howboxpara">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius saepe, voluptates quis enim incidunt obcaecati?</p>
+              </div>
+            </div>
+            <div class="howbox">
+              <div class="howboxicon">
+                <img src="./img/icon/work/settings.png" alt="download">
+              </div>
+              <div class="howboxhead">
+                <h3>Setup your profile</h3>
+              </div>
+              <div class="howboxpara">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius saepe, voluptates quis enim incidunt obcaecati?</p>
+              </div>
+            </div>
+            <div class="howbox">
+              <div class="howboxicon">
+                <img src="./img/icon/work/app.png" alt="download">
+              </div>
+              <div class="howboxhead">
+                <h3>Enjoy the features!</h3>
+              </div>
+              <div class="howboxpara">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius saepe, voluptates quis enim incidunt obcaecati?</p>
+              </div>  
+            </div>
+          </div>
+        </section>
+        <!--  How sApp Work Feature Ends here-->
+        <!--  Simple and Beautifull Interface Startes from here -->
+        <section class="simpleContainer">
+          <div class="topSection">
+            <div class="topFeature">
+              <p><span><i class="fa-regular fa-lightbulb"></i>Awesome </span> Interface</p>
+              <h2>Simple & Beautiful Interface</h2>
+            </div>
+            <div class="div">
+              <p class="topFeatureBottom">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum obcaecati dignissimos quae quo ad iste ipsum officiis deleniti asperiores sit.
+              </p>
+            </div>
+          </div>
+        <!--  Swiper Startes from here -->
+        <!--  Swiper Ends here-->
+        <div class="container">
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="./img/screenshots/1.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="./img/screenshots/2.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="./img/screenshots/3.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="./img/screenshots/4.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="./img/screenshots/5.jpg" alt="">
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+        </div>
+      </section>
+        <!--  Simple and Beautifull Interface Ends here-->
+        <!-- Customer section Startes from here -->
+        <section class="customerContainer">
+          <div class="topSection">
+            <div class="topFeature">
+              <p><span><i class="fa-regular fa-lightbulb"></i>Customer's  </span> Reviews</p>
+              <h2>What Our Customers Are Saying</h2>
+            </div>
+            <div class="div">
+              <p class="topFeatureBottom">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum obcaecati dignissimos quae quo ad iste ipsum officiis deleniti asperiores sit.
+              </p>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <!--  -->
+              <div class="col-12 col-md-6 col-lg-4 mr-3 mt-5">
+                <div class="card">
+                  <div class="topCard">
+                    <span class="cardStar"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></span>
+                    <h4>Excellent service & support!!</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis nam id facilis, provident doloremque placeat eveniet molestias laboriosam. Optio, esse.</p>
+                  </div>
+                  <div class="bottomcard">
+                    <div class="bottomContainer">
+                      <img src="./img/avatar/avatar-1.png" alt="avatar" >
+                      <div class="title">
+                        <h5>Junaid Hasan</h5>
+                        <h6>CEO, Themeland</h6>
+                      </div>
+                    </div>
+                  </div>
+                  <img src="./img/icon/quote.png" alt="quote" class="cardQute">
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-lg-4 mr-3 mt-5">
+                <div class="card">
+                  <div class="topCard">
+                    <span class="cardStar"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></span>
+                    <h4>Nice work! Keep it up</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis nam id facilis, provident doloremque placeat eveniet molestias laboriosam. Optio, esse.</p>
+                  </div>
+                  <div class="bottomcard">
+                    <div class="bottomContainer">
+                      <img src="./img/avatar/avatar-2.png" alt="avatar" >
+                      <div class="title">
+                        <h5>Junaid Hasan</h5>
+                        <h6>CEO, Themeland</h6>
+                      </div>
+                    </div>
+                  </div>
+                  <img src="./img/icon/quote.png" alt="quote" class="cardQute">
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-lg-4 mr-3 mt-5">
+                <div class="card">
+                  <div class="topCard">
+                    <span class="cardStar"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></span>
+                    <h4>Great support!!</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis nam id facilis, provident doloremque placeat eveniet molestias laboriosam. Optio, esse.</p>
+                  </div>
+                  <div class="bottomcard">
+                    <div class="bottomContainer">
+                      <img src="./img/avatar/avatar-3.png" alt="avatar" >
+                      <div class="title">
+                        <h5>Junaid Hasan</h5>
+                        <h6>CEO, Themeland</h6>
+                      </div>
+                    </div>
+                  </div>
+                  <img src="./img/icon/quote.png" alt="quote" class="cardQute">
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Customer section Ends here -->
+        <!--? Unlock Section Startes from here -->
+        <section class="unlockContainer">
+          <div class="topSection">
+            <div class="topFeature">
+              <h2>Unlock Full Power Of sApp</h2>
+            </div>
+            <div class="div">
+              <p class="topFeatureBottom">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum obcaecati dignissimos quae quo ad iste ipsum officiis deleniti asperiores sit.
+              </p>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-md-4 priceBox">
+                <!-- Column 1 content goes here -->
+                <div class="pricelogo">
+                  <img src="./img/pricing/basic.png" alt="Basic Package">
+                </div>
+                <div class="priceTitle">
+                  <h4>Basic</h4>
+                </div>
+                <div class="pricePlan">
+                  <h2>$49</h2>
+                </div>
+                <div class="priceList">
+                  <ul>
+                    <li>5GB Linux Web Space</li>
+                    <li>5 MySQL Databases</li>
+                    <li>24/7 Tech Support</li>
+                    <li>Daily Backups</li>
+                  </ul>
+                </div>
+                <div class="priceSign">
+                  <a href="#">Sign Up</a>
+                </div>
+
+              </div>
+              <div class="col-md-4 priceBox">
+                <!-- Column 2 content goes here -->
+                <div class="pricelogo">
+                  <img src="./img/pricing/premium.png" alt="Basic Package">
+                </div>
+                <div class="priceTitle">
+                  <h4>Basic</h4>
+                </div>
+                <div class="pricePlan">
+                  <h2>$129</h2>
+                </div>
+                <div class="priceList">
+                  <ul>
+                    <li>10GB Linux Web Space</li>
+                    <li>50 MySQL Databases</li>
+                    <li>Unlimited Email</li>
+                    <li>Daily Backups</li>
+                  </ul>
+                </div>
+                <div class="priceSign">
+                  <a href="#">Sign Up</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="contactUsPara">
+            <p>Not sure what to choose? <span><a href="#">Contact Us</a></span></p>
+          </div>
+        </section>
+        <!--? Unlock Section Ends here -->
+        <!--? FAQ Startes from here  -->
+        <section class="faqContainer">
+          <div class="topSection">
+            <div class="topFeature">
+              <h2>Frequently Asked Questions</h2>
+            </div>
+            <div class="div">
+              <p class="topFeatureBottom">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum obcaecati dignissimos quae quo ad iste ipsum officiis deleniti asperiores sit.
+              </p>
+            </div>
+          </div>
+          <!-- Accordion Startes from here -->
+          <div class="container">
+            <!-- 1 -->
+            <div class="accordion_container">
+              <div class="accordion_head">How to install sApp?<span class="plusminus">+</span>
+          
+              </div>
+              <div class="accordion_body" style="display: none;">
+                  <p>The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text.
+                  </p>
+              </div>
+              <!-- 2 -->
+              <div class="accordion_head">Can I get support from the Author?
+                <span class="plusminus">+</span>
+          
+              </div>
+              <div class="accordion_body" style="display: none;">
+                  <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source.
+                  </p>
+              </div>
+              <!-- 3 -->
+              <div class="accordion_head">Do you have a free trail?<span class="plusminus">+</span>
+          
+              </div>
+              <div class="accordion_body" style="display: none;">
+                  <p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                  </p>
+              </div>
+
+              <!-- 4th -->
+              <div class="accordion_head">How can I edit my personal information?<span class="plusminus">+</span>
+          
+              </div>
+              <div class="accordion_body" style="display: none;">
+                  <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+                  </p>
+              </div>
+              <!-- 5 -->
+              <div class="accordion_head">Contact form isn't working?<span class="plusminus">+</span>
+          
+              </div>
+              <div class="accordion_body" style="display: none;">
+                  <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.
+                  </p>
+              </div>
+
+          </div>
+          
+          </div>
+          <!-- Accordion Ends here -->
+          <div class="contactUsPara">
+            <p>Haven't find suitable answer?<span><a href="#">Tell us what you need.</a></span></p>
+          </div>
+        </section>
+        <!--? FAQ Ends here  -->
+        <!--? Our Team Startes from here -->
+        <section class="teamContainer">
+          <div class="topSection">
+            <div class="topFeature">
+              <h2>Our Team Experts</h2>
+            </div>
+            <div class="div">
+              <p class="topFeatureBottom">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum obcaecati dignissimos quae quo ad iste ipsum officiis deleniti asperiores sit.
+              </p>
+            </div>
+          </div>
+          <!-- Out Team Image Container Section Startes from here -->
+          <div class="container">
+            <div class="row">
+              <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="image-container">
+                  <img
+                    src="./img/avatar/avatar-1.png"
+                    alt="Image 1"
+                    class="img-fluid"
+                  />
+                  <div class="overlay">
+                    <h4>Junaid Hasan</h4>
+                    <h5>Founder & CEO</h5>
+                    <div class="imageIcons">
+                      <span><i class="fa-brands fa-facebook"></i></span>
+                      <span><i class="fa-brands fa-twitter"></i></span>
+                      <span><i class="fa-brands fa-google-plus-g"></i></span>
+                      <span><i class="fa-brands fa-linkedin"></i></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="image-container">
+                  <img
+                    src="./img/avatar/avatar-2.png"
+                    alt="Image 2"
+                    class="img-fluid"
+                  />
+                  <div class="overlay">
+                    <h4>Jessica William</h4>
+                    <h5>Co-Founder</h5>
+                    <div class="imageIcons">
+                      <span><i class="fa-brands fa-facebook"></i></span>
+                      <span><i class="fa-brands fa-twitter"></i></span>
+                      <span><i class="fa-brands fa-google-plus-g"></i></span>
+                      <span><i class="fa-brands fa-linkedin"></i></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="image-container">
+                  <img
+                    src="./img/avatar/avatar-3.png"
+                    alt="Image 3"
+                    class="img-fluid"
+                  />
+                  <div class="overlay">
+                    <h4>Md. Arham</h4>
+                    <h5>Web Developer</h5>
+                    <div class="imageIcons">
+                      <span><i class="fa-brands fa-facebook"></i></span>
+                      <span><i class="fa-brands fa-twitter"></i></span>
+                      <span><i class="fa-brands fa-google-plus-g"></i></span>
+                      <span><i class="fa-brands fa-linkedin"></i></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="image-container">
+                  <img
+                    src="./img/avatar/avatar-4.png"
+                    alt="Image 4"
+                    class="img-fluid"
+                  />
+                  <div class="overlay">
+                    <h4>Yasmin Akter</h4>
+                    <h5>Graphic Designer</h5>
+                    <div class="imageIcons">
+                      <span><i class="fa-brands fa-facebook"></i></span>
+                      <span><i class="fa-brands fa-twitter"></i></span>
+                      <span><i class="fa-brands fa-google-plus-g"></i></span>
+                      <span><i class="fa-brands fa-linkedin"></i></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Out Team Image Container Section Ends here-->
+        </section>
+        <!--? Our Team Ends here -->
+        <!--? Subscribe Container Section Startes from here -->
+        <section class="subContainer">
+          <div class="container CustomContainerSub">
+            <div class="Subcontent">
+              <h2>sApp is available for all devices</h2>
+              <p>
+                sApp is available for all devices, consectetur adipisicing elit.
+                Itaque at harum quam explicabo. Aliquam optio, delectus, dolorem
+                quod neque eos totam. Delectus quae animi tenetur voluptates
+                doloribus commodi dicta modi aliquid deserunt, quis maiores nesciunt
+                autem, aperiam natus.
+              </p>
+              <div class="subImageContainer">
+                <a href="#">
+                  <img src="./img/icon/google-play.png" alt="google-play" />
+                </a>
+                <a href="#">
+                  <img src="./img/icon/app-store.png" alt="Apple-play-Store App" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!--? Subscribe Container Section Ends here -->
+        <!--? Subscribe Form Container Startes from here -->
+        <section class="subFormContainer"> 
+          <div class="subFormContent">
+            <h2>Subscribe to get updates</h2>
+            <p>By subscribing you will get newsleter, promotions adipisicing elit. Architecto beatae, asperiores tempore repudiandae saepe aspernatur unde voluptate sapiente quia ex.</p>  
+          </div>
+          <form action="form" class="subForm container">
+            <input type="email" name="email" placeholder="Email" class="subemail" />
+            <input type="submit" value="Subscribe" class="subemail" style="color: white; background-color: #7c4fe0;" />
+          </form>
+          </div>
+        </section>
+        <!--? Subscribe Form Container Ends here -->
+        <!--? Form Section container Startes from here -->
+        <section class="formContainer">
+          <div class="topSection">
+            <div class="topFeature">
+              <h2>Stay Tuned</h2>
+            </div>
+            <div class="div">
+              <p class="topFeatureBottom">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum obcaecati dignissimos quae quo ad iste ipsum officiis deleniti asperiores sit.
+              </p>
+            </div>
+          </div>
+          <section class="container">
+            <div class="row">
+              <div class="col-12 col-sm-12 col-md-6 col-lg-6 formPara">
+                <p>
+                  Contrary to popular belief, Lorem Ipsum is not simply random text.
+                  It has roots in a piece of classical Latin literature from 45 BC,
+                  making it over 2000 years old.
+                </p>
+                <ul>
+                  <li>
+                    <a href="#">
+                      <div class="formIconContainer">
+                        <div class="formIcon">
+                          <i class="fa-solid fa-house"></i>
+                        </div>
+                        <span
+                          >Vestibulum nulla libero, convallis, tincidunt suscipit
+                          diam, DC 2002</span
+                        >
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <div class="formIconContainer">
+                        <div class="formIcon">
+                          <i class="fa-solid fa-phone"></i>
+                        </div>
+                        <span>+1 230 456 789-012 345 6789</span>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <div class="formIconContainer">
+                        <div class="formIcon">
+                          <i class="fa-solid fa-envelope"></i>
+                        </div>
+                        <span>exampledomain@domain.com</span>
+                      </div>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-12 col-sm-12 col-md-6 col-lg-6 formSection">
+                <form action="connect">
+                  <input
+                    type="text"
+                    name="name"
+                    placeholder="Name"
+                    class="stayFormInput"
+                  />
+                  <input
+                    type="text"
+                    name="email"
+                    placeholder="Email"
+                    class="stayFormInput"
+                  />
+                  <input
+                    type="text"
+                    name="subject"
+                    placeholder="Subject"
+                    class="stayFormInput"
+                  />
+                  <textarea
+                    class="stayFormInput staymessage"
+                    name="message"
+                    placeholder="Message"
+                    required="required"
+                  ></textarea>
+                  <button type="submit" class="stayFormButton">
+                    <span><i class="fa-solid fa-paper-plane"></i></span>
+                    Send Message
+                  </button>
+                </form>
+              </div>
+            </div>
+          </section>
+        </section>
+        <!--? Form Section container Ends here-->
+        <!--? Footer Section Startes from here-->
+        <footer class="footerContainer">
+          <div class="container footerContent">
+            <div class="footerLogoContainer">
+              <img src="./img/logo/logo.png" alt="Logo">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis non, fugit totam vel laboriosam vitae.</p>
+              <div class="footerIcons">
+                <a href="#" class="facebook">
+                  <span><i class="fa-brands fa-facebook-f"></i></span>
+                </a>
+                <a href="#" class="twitter">
+                  <span><i class="fa-brands fa-twitter"></i></span>
+                </a> 
+                <a href="#" class="googlePlus">
+                  <span><i class="fa-brands fa-google-plus-g"></i></span>
+                </a>
+                <a href="#" class="vine">
+                  <span><i class="fa-brands fa-vine"></i></span>
+                </a>
+              </div>
+            </div>
+            <div class="footerList">
+              <h3>Useful Links</h3>
+              <ul>
+                <li>Home</li>
+                <li>About Us</li>
+                <li>Services</li>
+                <li>Blog</li>
+                <li>Contact</li>
+              </ul>
+            </div>
+            <div class="footerList">
+              <h3>Product Help</h3>
+              <ul>
+                <li>FAQ</li>
+                <li>Privacy Policy</li>
+                <li>Support</li>
+                <li>Terms & Conditions</li>
+                <li>Contact</li>
+              </ul>
+            </div>
+            <div class="footerDownload">
+              <h2>Download</h2>
+              <img src="./img/icon/google-play-black.png" alt="google-play">
+              <img src="./img/icon/app-store-black.png" alt="Apple-play-Store">
+            </div>
+          </div>
+        </footer>
+        <!--? Footer Section Ends here-->
+      </main>
+      <a href="#top" class="backtotop">
+        <span><i class="fa-sharp fa-solid fa-arrow-up fa-bounce"></i></span>
+      </a>
+    <!-- Main Container Ends Here -->
+
+    <!-- Swiper Javascript Script -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+    <!-- Bootstrap Javascript Script  -->
+    <script src="https://unpkg.com/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- My Custom JS Link -->
+    <script src="./js/script.js"></script>
+  </body>
+</html>
