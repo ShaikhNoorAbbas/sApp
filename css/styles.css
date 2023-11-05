@@ -406,12 +406,11 @@ li {
   -moz-border-radius: 20px;
   -ms-border-radius: 20px;
   -o-border-radius: 20px;
-  box-shadow: 0 0 0.85rem rgba(0, 0, 0, 0.075);
-  border: 0.5px solid rgba(0, 0, 0, 0.075);
+  box-shadow: 0 0 0.90rem rgba(0, 0, 0, 0.075);
+  border: 0.5px solid rgba(0, 0, 0, 0.045);
 }
 .center-content:hover {
   box-shadow: 5px 2px 0.95rem rgba(0, 0, 0, 0.075);
-  margin-bottom: 10px;
   transition: margin-bottom 0.5s ease-in-out;
   -webkit-transition: margin-bottom 0.5s ease-in-out;
   -moz-transition: margin-bottom 0.5s ease-in-out;
